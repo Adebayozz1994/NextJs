@@ -1,8 +1,7 @@
 export default function Login() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-200 flex items-center justify-center">
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-5xl flex flex-col md:flex-row items-center">
-        {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start">
           <h1 className="text-blue-600 text-4xl font-bold mb-4">facebook</h1>
           <h2 className="text-gray-800 text-lg md:text-xl mb-4">Recent logins</h2>
@@ -10,10 +9,9 @@ export default function Login() {
             Click your picture or add an account.
           </p>
           <div className="grid grid-cols-2 gap-4 w-full">
-            {/* User Card */}
             <div className="border rounded-lg overflow-hidden shadow-sm">
               <img
-                src="/profile.jpg"
+                src="/image/20220410_095454.jpg"
                 alt="Profile"
                 className="w-full h-28 md:h-32 object-cover"
               />
@@ -21,14 +19,14 @@ export default function Login() {
                 <p className="text-center font-medium">Ogunlade</p>
               </div>
             </div>
-            {/* Add Account */}
             <div className="border rounded-lg flex items-center justify-center text-blue-600 text-3xl font-bold">
               +
             </div>
           </div>
         </div>
+        
 
-        {/* Right Section */}
+
         <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
           <form className="space-y-4">
             <input
