@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import Login from '../Login/Login';
 
 const Navbar = () => {
   const router = useRouter();
@@ -10,6 +11,7 @@ const Navbar = () => {
   };
 
   return (
+    <div>
     <nav className="bg-blue-600 text-white shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
@@ -49,6 +51,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
