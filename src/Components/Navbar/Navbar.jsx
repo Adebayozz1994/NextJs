@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import Login from '../Login/Login';
 
 const Navbar = () => {
   const router = useRouter();
@@ -14,15 +13,14 @@ const Navbar = () => {
     <div>
     <nav className="bg-blue-600 text-white shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo */}
+        
         <h1
           className="text-2xl font-bold cursor-pointer hover:text-gray-200"
           onClick={() => navigate('/')}
         >
-          MyLogo
+          GTBANK
         </h1>
 
-        {/* Navigation Links */}
         <div className="space-x-6">
           <button
             className="hover:text-gray-200 transition duration-200"
