@@ -23,19 +23,21 @@ const Page = () => {
   }, [id]); 
 
   return (
-    <div>
+    <div className="max-w-3xl mx-auto p-6">
       {error ? (
-        <p>{error}</p>
+        <p className="text-center text-xl text-red-500">{error}</p>
       ) : user ? (
-        <div>
-          <h1>User Information</h1>
-          <p>Name: {user.name}</p>
-          <p>Bio: {user.bio}</p>
-          <p>Location: {user.location}</p>
-          <p>Public Repos: {user.public_repos}</p>
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h1 className="text-3xl font-bold text-center mb-4 text-gray-800">User Information</h1>
+          <div className="space-y-4">
+            <p className="text-xl text-gray-700"><strong>ID:</strong> {user.id}</p>
+            <p className="text-xl text-gray-700"><strong>Username:</strong> {user.login}</p>
+            <p className="text-xl text-gray-700"><strong>Type:</strong> {user.type}</p>
+            <p className="text-xl text-gray-700"><strong>Node:</strong> {user.node_id}</p>
+          </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className="text-center text-xl text-gray-500">Loading...</p>
       )}
     </div>
   );
